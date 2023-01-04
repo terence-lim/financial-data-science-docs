@@ -13,7 +13,6 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="#" />
@@ -53,8 +52,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Index</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Index</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -84,6 +83,7 @@
  | <a href="#N"><strong>N</strong></a>
  | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
+ | <a href="#Q"><strong>Q</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
@@ -119,6 +119,8 @@
 </li>
         <li><a href="taq.html#taq.TAQ.__call__">(taq.TAQ method)</a>
 </li>
+        <li><a href="unstructured.html#unstructured.Store.__call__">(unstructured.Store method)</a>
+</li>
         <li><a href="unstructured.html#unstructured.TextualData.__call__">(unstructured.TextualData method)</a>
 </li>
       </ul></li>
@@ -139,6 +141,8 @@
 </li>
         <li><a href="taq.html#taq.TAQ.__getitem__">(taq.TAQ method)</a>
 </li>
+        <li><a href="unstructured.html#unstructured.Store.__getitem__">(unstructured.Store method)</a>
+</li>
         <li><a href="unstructured.html#unstructured.TextualData.__getitem__">(unstructured.TextualData method)</a>
 </li>
         <li><a href="unstructured.html#unstructured.Unstructured.__getitem__">(unstructured.Unstructured method)</a>
@@ -153,8 +157,6 @@
       <li><a href="sectors.html#sectors.Sectoring._bea_vintages">_bea_vintages (sectors.Sectoring attribute)</a>
 </li>
       <li><a href="alfred.html#alfred.Alfred._category_url">_category_url (alfred.Alfred attribute)</a>
-</li>
-      <li><a href="structured.html#structured.FFReader._datasets">_datasets (structured.FFReader attribute)</a>
 </li>
       <li><a href="structured.html#structured.PSTAT._event">_event (structured.PSTAT attribute)</a>
 </li>
@@ -218,13 +220,15 @@
 </li>
       <li><a href="busday.html#busday.BusDay.begyr">begyr() (busday.BusDay method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="structured.html#structured.Benchmarks">Benchmarks (class in structured)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="taq.html#taq.bin_quotes">bin_quotes() (in module taq)</a>
 </li>
       <li><a href="taq.html#taq.bin_trades">bin_trades() (in module taq)</a>
+</li>
+      <li><a href="recipes.html#recipes.Interest.bootstrap_rates">bootstrap_rates() (recipes.Interest static method)</a>
 </li>
       <li><a href="structured.html#structured.CRSP.build_lookup">build_lookup() (structured.CRSP method)</a>
 
@@ -302,6 +306,8 @@
         <li><a href="database.html#module-database">module</a>
 </li>
       </ul></li>
+      <li><a href="structured.html#structured.FFReader.datasets">datasets (structured.FFReader attribute)</a>
+</li>
       <li><a href="busday.html#busday.BusDay.date_range">date_range() (busday.BusDay method)</a>
 
       <ul>
@@ -316,7 +322,7 @@
         <li><a href="structured.html#structured.StocksFrame.bd.date_tuples">(structured.StocksFrame.bd static method)</a>
 </li>
       </ul></li>
-      <li><a href="busday.html#busday.BusDay.day">day() (busday.BusDay class method)</a>
+      <li><a href="busday.html#busday.BusDay.day">day() (busday.BusDay static method)</a>
 </li>
       <li><a href="unstructured.html#unstructured.Unstructured.db">db (unstructured.Unstructured attribute)</a>
 </li>
@@ -327,6 +333,8 @@
       <li><a href="unstructured.html#unstructured.Unstructured.delete">delete() (unstructured.Unstructured method)</a>
 </li>
       <li><a href="pyR.html#pyR.PyR.dim">dim (pyR.PyR attribute)</a>
+</li>
+      <li><a href="recipes.html#recipes.Interest.discounted_cash_flow">discounted_cash_flow() (recipes.Interest static method)</a>
 </li>
       <li>
     display
@@ -343,6 +351,8 @@
 
       <ul>
         <li><a href="database.html#database.Redis.dump">(database.Redis method)</a>
+</li>
+        <li><a href="unstructured.html#unstructured.Store.dump">(unstructured.Store method)</a>
 </li>
         <li><a href="unstructured.html#unstructured.TextualData.dump">(unstructured.TextualData method)</a>
 </li>
@@ -378,9 +388,7 @@
 </li>
       <li><a href="backtesting.html#backtesting.EventStudy">EventStudy (class in backtesting)</a>
 </li>
-      <li><a href="recipes.html#recipes.expected_shortfall_historical">expected_shortfall_historical() (in module recipes)</a>
-</li>
-      <li><a href="recipes.html#recipes.expected_shortfall_normal">expected_shortfall_normal() (in module recipes)</a>
+      <li><a href="recipes.html#recipes.RiskMeasure.expected_shortfall">expected_shortfall() (recipes.RiskMeasure method)</a>
 </li>
       <li><a href="edgar.html#edgar.Edgar.extract_filenames">extract_filenames() (edgar.Edgar static method)</a>
 </li>
@@ -422,10 +430,10 @@
 </li>
       <li><a href="recipes.html#recipes.fft_neweywest">fft_neweywest() (in module recipes)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="structured.html#structured.Finder">Finder (class in structured)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="backtesting.html#backtesting.BackTest.fit">fit() (backtesting.BackTest method)</a>
 
       <ul>
@@ -450,6 +458,8 @@
         <li><a href="unstructured.html#unstructured.TextualData.form_splits">(unstructured.TextualData method)</a>
 </li>
       </ul></li>
+      <li><a href="recipes.html#recipes.Interest.forward_rates">forward_rates() (recipes.Interest static method)</a>
+</li>
       <li><a href="recipes.html#recipes.fractiles">fractiles() (in module recipes)</a>
 </li>
       <li><a href="pyR.html#pyR.PyR.frame">frame (pyR.PyR property)</a>
@@ -523,7 +533,11 @@
 </li>
       </ul></li>
       <li><a href="structured.html#structured.Stocks.get_section">get_section() (structured.Stocks method)</a>
+
+      <ul>
+        <li><a href="structured.html#structured.StocksBuffer.get_section">(structured.StocksBuffer method)</a>
 </li>
+      </ul></li>
       <li><a href="alfred.html#alfred.Alfred.get_series">get_series() (alfred.Alfred method)</a>
 
       <ul>
@@ -549,6 +563,10 @@
 </li>
       <li><a href="graph.html#graph.graph_info">graph_info() (in module graph)</a>
 </li>
+      <li><a href="unstructured.html#unstructured.Store.gzip_dump">gzip_dump() (unstructured.Store static method)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store.gzip_load">gzip_load() (unstructured.Store static method)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -573,6 +591,8 @@
 </li>
       <li><a href="pyR.html#pyR.PyR.iloc">iloc (pyR.PyR attribute)</a>
 </li>
+      <li><a href="recipes.html#recipes.impute_em">impute_em() (in module recipes)</a>
+</li>
       <li><a href="database.html#database.SQL.Index">Index() (database.SQL class method)</a>
 </li>
       <li><a href="pyR.html#pyR.PyR.index">index() (pyR.PyR method)</a>
@@ -585,6 +605,8 @@
 </li>
       <li><a href="recipes.html#recipes.integration_order">integration_order() (in module recipes)</a>
 </li>
+      <li><a href="recipes.html#recipes.Interest">Interest (class in recipes)</a>
+</li>
       <li><a href="busday.html#busday.WeeklyDay.ismonthend">ismonthend() (busday.WeeklyDay method)</a>
 </li>
       <li><a href="taq.html#taq.itertaq">itertaq() (in module taq)</a>
@@ -595,6 +617,12 @@
 <h2 id="J">J</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="unstructured.html#unstructured.Store.json_dump">json_dump() (unstructured.Store static method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="unstructured.html#unstructured.Store.json_load">json_load() (unstructured.Store static method)</a>
+</li>
       <li><a href="busday.html#busday.BusDay.june_universe">june_universe() (busday.BusDay method)</a>
 </li>
   </ul></td>
@@ -629,6 +657,8 @@
         <li><a href="database.html#database.Redis.load">(database.Redis method)</a>
 </li>
         <li><a href="sectors.html#sectors.Sectoring.load">(sectors.Sectoring method)</a>
+</li>
+        <li><a href="unstructured.html#unstructured.Store.load">(unstructured.Store method)</a>
 </li>
         <li><a href="unstructured.html#unstructured.TextualData.load">(unstructured.TextualData method)</a>
 </li>
@@ -696,7 +726,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="database.html#database.MongoDB">MongoDB (class in database)</a>
 </li>
-      <li><a href="busday.html#busday.BusDay.month">month() (busday.BusDay class method)</a>
+      <li><a href="busday.html#busday.BusDay.month">month() (busday.BusDay static method)</a>
 </li>
       <li><a href="alfred.html#alfred.mrsq">mrsq() (in module alfred)</a>
 </li>
@@ -744,9 +774,19 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="recipes.html#recipes.Interest.par_duration">par_duration() (recipes.Interest static method)</a>
+</li>
       <li><a href="edgar.html#edgar.Edgar.parse_pathname">parse_pathname() (edgar.Edgar static method)</a>
 </li>
       <li><a href="unstructured.html#unstructured.parse_where">parse_where() (in module unstructured)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store.pathjoin">pathjoin() (unstructured.Store method)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store.pathname">pathname() (unstructured.Store method)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store.pickle_dump">pickle_dump() (unstructured.Store static method)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store.pickle_load">pickle_load() (unstructured.Store static method)</a>
 </li>
       <li><a href="database.html#database.SQL.pivot">pivot() (database.SQL method)</a>
 </li>
@@ -766,12 +806,12 @@
 </li>
       <li><a href="display.html#display.plot_fitted">plot_fitted() (in module display)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="display.html#display.plot_hist">plot_hist() (in module display)</a>
 </li>
       <li><a href="display.html#display.plot_leverage">plot_leverage() (in module display)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="display.html#display.plot_qq">plot_qq() (in module display)</a>
 </li>
       <li><a href="display.html#display.plot_scale">plot_scale() (in module display)</a>
@@ -788,6 +828,8 @@
 </li>
       <li><a href="alfred.html#alfred.Alfred.popular">popular() (alfred.Alfred static method)</a>
 </li>
+      <li><a href="recipes.html#recipes.Interest.present_value">present_value() (recipes.Interest static method)</a>
+</li>
       <li><a href="structured.html#structured.PSTAT">PSTAT (class in structured)</a>
 </li>
       <li>
@@ -798,6 +840,14 @@
 </li>
       </ul></li>
       <li><a href="pyR.html#pyR.PyR">PyR (class in pyR)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Q">Q</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="recipes.html#recipes.quadprog">quadprog() (in module recipes)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -836,10 +886,10 @@
       </ul></li>
       <li><a href="database.html#database.Redis">Redis (class in database)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="database.html#database.Redis.redis">redis (database.Redis attribute)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="unstructured.html#unstructured.TextualData.relativize">relativize() (unstructured.TextualData method)</a>
 </li>
       <li><a href="database.html#database.SQL.remove">remove() (database.SQL method)</a>
@@ -853,6 +903,8 @@
       <li><a href="alfred.html#alfred.Alfred.request_series_observations">request_series_observations() (alfred.Alfred method)</a>
 </li>
       <li><a href="database.html#database.requests_get">requests_get() (in module database)</a>
+</li>
+      <li><a href="recipes.html#recipes.RiskMeasure">RiskMeasure (class in recipes)</a>
 </li>
       <li><a href="backtesting.html#backtesting.RiskPremium">RiskPremium (class in backtesting)</a>
 </li>
@@ -903,10 +955,10 @@
       </ul></li>
       <li><a href="structured.html#structured.Signals">Signals (class in structured)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="structured.html#structured.SignalsFrame">SignalsFrame (class in structured)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="alfred.html#alfred.Alfred.splice_series">splice_series() (alfred.Alfred method)</a>
 </li>
       <li><a href="database.html#database.SQL">SQL (class in database)</a>
@@ -920,6 +972,8 @@
       <li><a href="structured.html#structured.StocksFrame.bd">StocksFrame.bd (class in structured)</a>
 </li>
       <li><a href="unstructured.html#unstructured.LMReader.stopwords_url">stopwords_url (unstructured.LMReader attribute)</a>
+</li>
+      <li><a href="unstructured.html#unstructured.Store">Store (class in unstructured)</a>
 </li>
       <li><a href="pyR.html#pyR.StrListVector">StrListVector() (in module pyR)</a>
 </li>
@@ -965,31 +1019,21 @@
 </li>
       <li><a href="edgar.html#edgar.Edgar.ticker_url">ticker_url (edgar.Edgar attribute)</a>
 </li>
-      <li><a href="recipes.html#recipes.to_bootstrap_rates">to_bootstrap_rates() (in module recipes)</a>
-</li>
-      <li><a href="busday.html#busday.to_date">to_date() (in module busday)</a>
-</li>
-      <li><a href="busday.html#busday.to_datetime">to_datetime() (in module busday)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="recipes.html#recipes.to_discounted_cash_flow">to_discounted_cash_flow() (in module recipes)</a>
+      <li><a href="busday.html#busday.BusDay.to_date">to_date() (busday.BusDay static method)</a>
 </li>
-      <li><a href="recipes.html#recipes.to_forward_rates">to_forward_rates() (in module recipes)</a>
+      <li><a href="busday.html#busday.BusDay.to_datetime">to_datetime() (busday.BusDay static method)</a>
 </li>
       <li><a href="edgar.html#edgar.Edgar.to_localdir">to_localdir() (edgar.Edgar method)</a>
 </li>
       <li><a href="edgar.html#edgar.Edgar.to_localname">to_localname() (edgar.Edgar method)</a>
 </li>
-      <li><a href="busday.html#busday.to_monthend">to_monthend() (in module busday)</a>
-</li>
-      <li><a href="recipes.html#recipes.to_par_duration">to_par_duration() (in module recipes)</a>
-</li>
-      <li><a href="recipes.html#recipes.to_present_value">to_present_value() (in module recipes)</a>
+      <li><a href="busday.html#busday.BusDay.to_monthend">to_monthend() (busday.BusDay static method)</a>
 </li>
       <li><a href="backtesting.html#backtesting.to_type">to_type() (in module backtesting)</a>
 </li>
-      <li><a href="recipes.html#recipes.to_weighted_maturity">to_weighted_maturity() (in module recipes)</a>
+      <li><a href="busday.html#busday.BusDay.today">today() (busday.BusDay static method)</a>
 </li>
       <li><a href="unstructured.html#unstructured.TextualData.tokenize">tokenize() (unstructured.TextualData method)</a>
 </li>
@@ -1020,9 +1064,7 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="recipes.html#recipes.value_at_risk_historical">value_at_risk_historical() (in module recipes)</a>
-</li>
-      <li><a href="recipes.html#recipes.value_at_risk_normal">value_at_risk_normal() (in module recipes)</a>
+      <li><a href="recipes.html#recipes.RiskMeasure.value_at_risk">value_at_risk() (recipes.RiskMeasure method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -1042,12 +1084,14 @@
 </li>
       <li><a href="recipes.html#recipes.weighted_average">weighted_average() (in module recipes)</a>
 </li>
-      <li><a href="recipes.html#recipes.winsorize">winsorize() (in module recipes)</a>
+      <li><a href="recipes.html#recipes.Interest.weighted_maturity">weighted_maturity() (recipes.Interest static method)</a>
 </li>
-      <li><a href="unstructured.html#unstructured.TextualData.word2idx">word2idx (unstructured.TextualData attribute)</a>
+      <li><a href="recipes.html#recipes.winsorize">winsorize() (in module recipes)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="unstructured.html#unstructured.TextualData.word2idx">word2idx (unstructured.TextualData attribute)</a>
+</li>
       <li><a href="backtesting.html#backtesting.BackTest.write">write() (backtesting.BackTest method)</a>
 
       <ul>
@@ -1066,7 +1110,7 @@
 <h2 id="Y">Y</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="busday.html#busday.BusDay.year">year() (busday.BusDay class method)</a>
+      <li><a href="busday.html#busday.BusDay.year">year() (busday.BusDay static method)</a>
 </li>
   </ul></td>
 </tr></table>
